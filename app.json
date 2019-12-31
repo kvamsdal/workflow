@@ -2,18 +2,32 @@
   "id": "ecc65510-7622-4852-955e-806f1ff542be",
   "name": "workflow",
   "publisher": "Pernille",
+  "version": "1.0.0.0",
   "brief": "",
   "description": "",
-  "version": "1.0.0.0",
   "privacyStatement": "",
   "EULA": "",
   "help": "",
   "url": "",
   "logo": "",
-  "capabilities": [],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "appId": "63ca2fa4-4f03-4f2b-a480-172fef340d3f",
+      "publisher": "Microsoft",
+      "name": "System Application",
+      "version": "1.0.0.0"
+    },
+    {
+      "appId": "437dbf0e-84ff-417a-965d-ed2bb9650972",
+      "publisher": "Microsoft",
+      "name": "Base Application",
+      "version": "15.0.0.0"
+    }
+  ],
   "screenshots": [],
   "platform": "15.0.0.0",
-  "application": "15.0.0.0"
+  "contextSensitiveHelpUrl": "https://ALProject2.com/help/",
+  "showMyCode": true,
+  "runtime": "4.0"
  
 }
