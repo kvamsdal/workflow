@@ -1,4 +1,4 @@
-codeunit 51202 "WF Code Service"
+codeunit 50101 "WF Code Service"
 {
     trigger OnRun()
     begin

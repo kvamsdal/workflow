@@ -1,4 +1,4 @@
-codeunit 51201 "WF Integration Service"
+codeunit 50100 "WF Integration Service"
 {
     trigger OnRun()
     begin

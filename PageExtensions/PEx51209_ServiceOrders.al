@@ -1,4 +1,4 @@
-pageextension 51209 "HBR Service Order" extends "Service Order"
+pageextension 50100 "HBR Service Order" extends "Service Order"
 {
     layout
     {

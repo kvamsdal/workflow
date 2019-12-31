@@ -1,4 +1,4 @@
-tableextension 51207 "HBR Service Header" extends "Service Header"
+tableextension 50100 "HBR Service Header" extends "Service Header"
 {
     fields
     {
