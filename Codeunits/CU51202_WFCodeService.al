@@ -5,6 +5,12 @@ codeunit 51202 "WF Code Service"
 
     end;
 
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"WF Integration Service", 'OnReopenServiceOrder', '', false, false)]
+    procedure OnReopenServiceOrder(var ServHeader: Record "Service Header")
+    begin
+        PerformManualReopen(ServHeader);
+    end;
+
     procedure RunWorkflowOnSendServiceOrderApprovalCode(): Code[128]
     begin
         exit(UpperCase('RunWorkflowOnSendServiceOrderApproval'))
@@ -211,9 +217,7 @@ codeunit 51202 "WF Code Service"
     begin
         if ServOrder."Approval Status" = ServOrder."Approval Status"::"Pending Approval" then
             Error(ErrorCancelApproval);
-
         Reopen(ServOrder);
-
     end;
 
     procedure Reopen(var ServOrder: Record "Service Header")

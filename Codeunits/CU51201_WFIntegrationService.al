@@ -14,6 +14,11 @@ codeunit 51201 "WF Integration Service"
     begin
     end;
 
+    [IntegrationEvent(false, false)]
+    PROCEDURE OnReopenServiceOrder(VAR ServHeader: Record "Service Header");
+    begin
+    end;
+
     local procedure IsServiceOrderEnabled(var ServHeader: Record "Service Header"): Boolean
     var
         WFMngt: Codeunit "Workflow Management";

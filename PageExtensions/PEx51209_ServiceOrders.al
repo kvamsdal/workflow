@@ -76,9 +76,8 @@ pageextension 51209 "HBR Service Order" extends "Service Order"
 
                     trigger OnAction()
                     var
-                        WFCodeService: Codeunit "WF Code Service";
                     begin
-                        WFCodeService.PerformManualReopen(Rec);
+                        ServiceWFIntegr.OnReopenServiceOrder(Rec);
                     end;
                 }
             }
